@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    color: white;
+}
+
+body{
+    background-color: rgb(4, 0, 17);
+}
+
+h1{
+    font-size: 50px;
+}
+h1 span{
+    color:rgb(180, 1, 136);
+}
+
+#main-div{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-block: 70px;
+    padding-block: 10px;
+
+}
+
+#image{
+    height: 400px;
+    width: 400px;
+}
+
+#gen-input{
+    padding-block: 20px;
+    padding-inline: 10px;
+    margin-left: 10px;
+    font-size: 18px;
+    width: 400px;
+    border: none;
+    border-radius:20px ;
+    background-color: rgba(0, 0, 43, 0.911);
+}
+
+#gen-btn{
+    padding-inline: 50px;
+    border: none;
+    margin-right: 6px;
+    border-radius:40px ;
+    font-size: 14px;
+    cursor: pointer;
+    background-color:rgb(180, 1, 136);
+}
+
+#gen-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius:20px ;
+    margin-top: 10px;
+    background-color: rgba(0, 0, 43, 0.911);
+}
+
+/* responsivness */
+@media only screen and (max-width: 768px) {
+    /* For  tablet: */
+    #image{
+        height: 350px;
+        width: 350px;
+    }
+
+    #gen-input{
+        width: 300px;
+        padding-block: 10px;
+    }
+    
+    #gen-btn{
+        padding-inline: 25px;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    /* For mobile */
+    h1{
+        font-size: 25px;
+    }
+    
+    #image{
+        height: 350px;
+        width: 250px;
+    }
+    
+    #gen-input{
+        width: 100px;
+        padding-block: 5px;
+        font-size: 10px;
+    }
+
+    #gen-btn{
+        font-size: 10px;
+        padding-inline: 15px;
+    }
+
+
+
+}
